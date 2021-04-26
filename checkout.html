@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./checkout.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <!-- Header here -->
+    <!-- Topbar Start-->
+    <header>
+        <nav id="topbar">
+            <!-- Logo-->
+            <div id="logo-wrapper">
+                <a href="./index.html"><span>SHOP</span>LANE</a>
+            </div>
+            <!-- Menu Items-->
+            <div class="menuitems-wrapper" id="menu-links">
+                <a href="./index.html" class="menu-items">Home</a>
+                <a href="./index.html#clothing-section" class="menu-items">Clothing</a>
+                <a href="./index.html#accessory-section" class="menu-items">Accessories</a>
+            </div>
+            <!-- Icons -->
+            <div id="icons-wrapper">
+                <div id="search-wrapper" class="side-search">
+                    <i class="fas fa-search"></i>
+                    <input id="search-box" type="text" placeholder="Search for Products">  
+                </div>
+                <div id="cart-wrapper">
+                    <p id="cart-count">0</p>
+                    <a href="./checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                
+                <!-- <i class="fas fa-user"></i> -->
+                <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/1200px-Crystal_Clear_kdm_user_female.svg.png" alt="">
+               <!-- <img width="30px" src="https://icons-for-free.com/iconfiles/png/512/avatar+circle+male+profile+user+icon-1320196710301016992.png" alt=""> -->
+
+               <div id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <!-- <div id="burger">
+                    <i class="fas fa-bars"></i>
+                </div> -->
+               
+            </div>       
+        </nav>
+    </header>
+    <!-- Topbar End-->
+
+    <main>
+        <section id="main-section">
+            <h1 id="main-heading">Checkout</h1>
+
+            <div id="content-wrapper">
+                <div id="card-list">
+                    <h3 class="section-title">Total Items: <span id="item-count">0</span></h3>
+                </div>
+                <div>
+                    <h3 class="section-title">Total Amount</h3>
+                    <p>Amount: Rs <span id="total-amount">0</span></p>
+                    <button id="btn-place-order">Place Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer here -->
+     <!-- Footer Start-->
+     <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="#" class="footer-link">Men Clothing</a>
+            <a href="#" class="footer-link">Women Clothing</a>
+            <a href="" class="footer-link">Men Accessories</a>
+            <a href="" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="#" class="footer-link">Zara</a>
+            <a href="" class="footer-link">Pantaloons</a>
+            <a href="" class="footer-link">Levis</a>
+            <a href="" class="footer-link">UCB</a>
+            <a href="" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p class="footer-link">Building 101</p>
+            <p class="footer-link">Central Avenue</p>
+            <p class="footer-link">LA - 902722</p>
+            <p class="footer-link">United States</p>
+        </div>
+    </footer>
+    <!-- Footer End-->
+    
+    <script src="./base.js"></script>
+    <script src="./checkout.js"></script>
+</body>
+</html>
+

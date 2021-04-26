@@ -1,0 +1,50 @@
+/* ----------- Slick Styles -------------- */
+
+/* SLICK STYLES START */
+
+.slick-slide {
+    width: 100%;
+    margin: 0 60px;
+}
+
+.slick-dots {
+    list-style-type: none;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots button {
+    display: inline-block;
+    font-size: 0px;
+    color: #ccc;
+    /* background-color: #ccc; */
+    background-color: #008080;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 6px;
+    margin-right: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-active button {
+    /* background-color: #aaa; */
+    background-color: #b30000;
+    /* background-color: rgba(	179, 0, 0, 0.9); */
+}
+
+/* SLICK STYLES END */
+
+@media (max-width: 479px) {
+    .slick-slide {
+        margin: 0 30px;
+    }
+}

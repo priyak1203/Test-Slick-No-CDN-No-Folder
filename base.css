@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding : 0; 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============ Top Bar Styles ============== */ 
+
+#topbar {
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 16px 8%; 
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+#logo-wrapper {
+    width: 25%;
+    /* background-color: beige; */
+}
+
+#logo-wrapper a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;  
+    cursor: pointer;
+    color: #008080;
+   
+    letter-spacing: 1px;  
+}
+
+#logo-wrapper span {
+  color : #b30000; 
+}
+
+.menuitems-wrapper {
+    width: 30%;
+    padding: 16px;
+    /* margin-right: 30px; */
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: beige; */
+   
+}
+
+.menuitems-wrapper a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #b30000; 
+   
+    
+    /* padding-bottom: 2px;
+    border-bottom: 2px solid transparent; */
+}
+
+.menuitems-wrapper a:hover {
+    /* border-bottom: 2px solid #008080; */
+    color: #008080;
+    
+}
+
+
+#icons-wrapper {
+    width: 30%;
+    display : inline-flex;
+    /* background-color: burlywood; */
+    justify-content: space-around;
+    align-items: center;
+    color: #b30000;
+    font-size: 20px;
+   
+}
+
+.side-search {
+    max-width: 400x;
+    display:flex;
+    align-items:center;
+    background-color: rgb(245, 242, 242); 
+}
+
+#search-wrapper  > i {
+    color: #999;
+    font-size: 18px;
+    padding-left: 8px; 
+    margin-left: 2px;
+}
+
+#search-box {
+    /* width: 100%; */
+    border:  1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    outline: none;
+    padding: 6px 6px 4px 6px;
+    /* padding: 4% 2% 2% 4%; */
+    font-size: 14px;
+    color: #b30000;
+    margin-right: 2px;
+}
+
+#cart-wrapper {
+    /* margin-right: 32px; */
+    position: relative;
+}
+
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #008080;
+    color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    /* bottom: 14px;
+    left: 14px; */
+}
+
+#cart-wrapper > a {
+    text-decoration: none;
+    color:#b30000;
+}
+
+
+/* ----------------- Sidebar Styles Start ------------------ */ 
+
+#burger {
+    display: none;
+    /* flex-direction: column;   */
+    cursor: pointer;
+   
+}
+
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #b30000;
+    /* opacity: 0.9; */
+    transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;  
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 479px) {
+    .menuitems-wrapper{
+        position:absolute;
+        right: 0;
+        height: 89vh;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        background-color: #008080;
+        z-index: 20;
+        
+    }
+    .menuitems-wrapper a {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .menuitems-wrapper a:hover {
+        color: #b30000;
+    }
+    
+    .side-search {
+        position: absolute;
+        right: 0;
+        height: 10vh;
+        top: 50vh;
+        width: 50%;
+        background-color: #008080;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        z-index: 20;
+    }
+
+    #search-wrapper > i {
+        font-size: 18px;
+        color: white;
+        margin-right: 7px;
+    }
+
+    #search-box {
+       width: 75%;
+        /* padding: 4% 2% 2% 4%; */
+        margin-right: 2px;
+    }
+}
+.side-active {
+    transform: translateX(0%);
+}
+
+#close-icon {
+    display: none;
+    font-size: 25px;
+}
+
+/* ----------------- Sidebar Styles End ------------------ */ 
+
+main {
+    /* min-height: 80vh; */
+    margin-bottom: 5%;
+}
+
+
+
+
+/* ============= Footer Styles =============== */
+footer {
+    /* background-color: bisque; */
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 8%;
+    
+}
+
+/* footer > div { 
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer > div:first-of-type {
+    padding-left: 0;
+} */
+
+.footer-heading {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b30000; 
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-decoration: none;
+    display: block;
+    color: #b30000;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-link:first-of-type {
+    margin-top: 16px;
+}
+
+.footer-link:hover {
+    color: #008080;
+}
+

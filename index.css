@@ -1,0 +1,81 @@
+
+/* ============= Slide Show Styles =============== */ 
+
+.slideshow-section {
+    margin-top: 12vh;
+}
+
+/* ============= Product Grid Styles ============= */ 
+.homepage-section {
+    padding: 4% 8% 0;
+}
+.section-heading {
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 28px 0;
+    color: #b30000;
+}
+
+/* .section-heading:hover {
+    color: #008080;
+} */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.product-card {
+    
+    /* width: 100%; */
+    max-width: 18%;
+    margin-left: 1%;
+    margin-right: 1%;
+    /* margin: 30px 10px; */
+    margin-bottom: 16px;
+    box-shadow: 0 2px 5px #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 10px rgba(0, 128, 128, 0.6);
+    
+}
+
+.product-card > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-image {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-meta {
+    padding: 16px;
+}
+
+.product-meta > h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-meta > h5 {
+    font-weight: 600;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+.product-meta > p {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #b30000;
+}

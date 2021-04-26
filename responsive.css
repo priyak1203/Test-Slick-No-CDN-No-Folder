@@ -1,0 +1,147 @@
+/* ----  Responsive Design Styles for Mobile Screen ---- */ 
+
+
+/* ----- Header and Footer ------ */
+@media (max-width: 479px) {
+
+    header {
+        width: 100%;
+        /* display: none; */
+    }
+
+    #topbar {
+        /* display: none; */
+        padding: 16px 4%;
+    }
+
+    
+    #icons-wrapper {
+        justify-content: space-between;
+    }
+
+   
+    #burger {
+        display: block;
+    }
+
+    
+    /* Footer Section */ 
+    footer {
+        width: 100%;
+        flex-direction: column;  
+        padding-bottom: 12%;
+    }
+
+    footer > div {
+        margin-top: 30px; 
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+  
+}
+
+
+
+
+/* ----------- Product Grid on Hompage ---------------- */
+@media (max-width: 479px) {
+
+    .homepage-section {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .section-heading {
+        font-size: 24px;
+        margin: 14px 0;
+    }
+
+    .product-grid {
+        justify-content: center;
+    }
+    .product-card {
+       max-width: 48%;
+    }
+}
+
+
+/* ----------- Product Details Page  ---------------- */
+
+@media (max-width: 479px) {
+    .product-wrapper {
+       flex-direction: column;  
+       padding: 4%;
+    }
+
+    #product-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    #product-details {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    #product-title {
+        font-size: 40px;
+    }
+    
+    #product-brand {
+        font-size: 20px;
+    }
+
+    .details-heading {
+        font-size: 20px;
+    }
+
+    #price-amount{
+        font-size: 20px;
+    }
+    
+    .details-heading {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    } 
+    
+
+}
+
+
+/* ----------- Checkout Page  ---------------- */
+
+@media (max-width: 479px) {
+    #main-section {
+       padding: 4%;
+    }
+
+    #main-heading {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    #content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #content-wrapper > div:first-of-type {
+        width: 100%;
+    }
+
+    #content-wrapper > div:last-of-type {
+        width: 100%;
+        margin-top: 36px;
+        margin-left: 0;
+    }
+
+    .section-title {
+        font-size : 22px;
+    }
+}
